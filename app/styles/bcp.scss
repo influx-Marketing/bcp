@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
+
+.setup {
+  background-color: #eeeeee;
+  height: 100px;
+}
+
+/*flexbox method*/
+.flex-container {
+    display: flex;  /* flexbox works on x & y axis */
+    height: 300px;
+    width: 960px;
+    margin: 0 auto;
+    list-style: none;
+    flex-direction: row; /* change flex box ordering – default is row*/
+    /*flex-wrap: wrap; */  /* requires child sizing – fills gap and wraps content below (not natively responsive) */
+    outline: 1px solid red;
+    padding: 0;
+    justify-content: space-between; /* control behavior of child elements */
+    align-items: flex-start;
+}
+
+.flex-container li {
+    flex-grow: 1; /* flexbox behavoir – 0 = off, 1 =  ratio 1:1 , 2 = 2:1, etc. */
+    text-align: center;
+    /*width: 150px;*/
+}
+
+.target-2 {
+    flex-grow: 2; /* grow to twice size */
+}
+
+.big {
+    height: 150px;
+}
+
+.medium {
+    height: 100px;
+}
+
+.small {
+    height: 50px;
+}
