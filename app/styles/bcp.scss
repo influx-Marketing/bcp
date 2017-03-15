@@ -3,6 +3,7 @@ $blue-color: #0F69F7;
 $red-color: #FC3E3E;
 $black-color: #363636;
 $grey-color: #EEEEEE;
+$white-color: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -47,17 +48,17 @@ a {
 a:hover {
   color: $black-color;
   text-decoration: none;
-  border-bottom: 1px solid $red-color;
+  border-bottom: 2px solid $red-color;
 }
 
 a.black-under {
   color: $blue-color;
-  border-bottom: 1px solid $black-color;
+  border-bottom: 2px solid $black-color;
 }
 
 a.black-under:hover {
   color: $black-color;
-  border-bottom: 1px solid $black-color;
+  border-bottom: 2px solid $black-color;
 }
 
 .intro,
@@ -70,8 +71,8 @@ section {
 
 footer {
   outline: 0;
-  background-color: #0F69F7;
-  color: #ffffff;
+  background-color: $blue-color;
+  color: $white-color;
   text-align: center;
   font-size: 0.9rem;
   padding-top: 1rem;
@@ -98,14 +99,14 @@ footer {
 }
 
 .navbar-default {
-  background-color: rgba(255,255,255,0.96);
+  background-color: rgba(255,255,255,0.9);
 }
 
 .nav-flex {
   display: flex;
   /* flexbox works on x & y axis */
   height: 6.5rem;
-  width: 82vw;
+  width: 76vw;
   margin: 0 auto;
   list-style: none;
   justify-content: space-between;
@@ -136,11 +137,13 @@ footer {
 
 .grey-ep {
   background-color: $grey-color;
+  color: $black-color;
   padding: 2rem;
 }
 
 .blue-ep {
   background-color: $blue-color;
+  color: $white-color;
   padding: 2rem;
 }
 
@@ -160,23 +163,33 @@ footer {
 .ep-1,
 .ep-2,
 .ep-3,
-.ep-4 {
+.ep-4,
+.ep-5,
+.ep-6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .ep-1 {
-  background-image: url("/images/episode-1.jpg");
+  background-image: url("/images/ep-1.jpg");
 }
 
 .ep-2 {
-  background-image: url("/images/episode-2.jpg");
+  background-image: url("/images/ep-2.jpg");
 }
 
 .ep-3 {
-  background-image: url("/images/episode-3.jpg");
+  background-image: url("/images/ep-3.jpg");
 }
 
 .ep-4 {
-  background-image: url("/images/episode-4.jpg");
+  background-image: url("/images/ep-4.jpg");
+}
+
+.ep-5 {
+  background-image: url("/images/ep-5.jpg");
+}
+
+.ep-6 {
+  background-image: url("/images/ep-6.jpg");
 }
