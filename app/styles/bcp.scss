@@ -1,0 +1,182 @@
+$font-stack: 'Inconsolata', monospace;
+$blue-color: #0F69F7;
+$red-color: #FC3E3E;
+$black-color: #363636;
+$grey-color: #EEEEEE;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $black-color;
+  padding: 10rem 0 0;
+  line-height: 130%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.3rem;
+}
+
+p {
+  padding-bottom: 0.6rem;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+a {
+  color: $black-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $black-color;
+  text-decoration: none;
+  border-bottom: 1px solid $red-color;
+}
+
+a.black-under {
+  color: $blue-color;
+  border-bottom: 1px solid $black-color;
+}
+
+a.black-under:hover {
+  color: $black-color;
+  border-bottom: 1px solid $black-color;
+}
+
+.intro,
+section {
+  margin: 0 auto;
+  width: 82vw;
+  padding: 0 2rem;
+  display: flex;
+}
+
+footer {
+  outline: 0;
+  background-color: #0F69F7;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  display: inline-block;
+  width: 100vw;
+}
+// spans
+
+.blue-text {
+  color: $blue-color;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.bold {
+  font-weight: 700;
+}
+// nav
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,0.96);
+}
+
+.nav-flex {
+  display: flex;
+  /* flexbox works on x & y axis */
+  height: 6.5rem;
+  width: 82vw;
+  margin: 0 auto;
+  list-style: none;
+  justify-content: space-between;
+  /* control behavior of child elements */
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.nav-flex li {
+  text-align: center;
+}
+// body
+
+.intro {
+  width: 58vw;
+  padding: 4rem 2rem;
+  display: block;
+}
+
+.blue-ep,
+.episode,
+.grey-ep {
+  height: 20rem;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.grey-ep {
+  background-color: $grey-color;
+  padding: 2rem;
+}
+
+.blue-ep {
+  background-color: $blue-color;
+  padding: 2rem;
+}
+
+.text-container-1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.text-container-2 {
+  width: 100%;
+  height: 99%;
+  overflow: auto;
+  padding-right: 0px;
+}
+
+.ep-1,
+.ep-2,
+.ep-3,
+.ep-4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ep-1 {
+  background-image: url("/images/episode-1.jpg");
+}
+
+.ep-2 {
+  background-image: url("/images/episode-2.jpg");
+}
+
+.ep-3 {
+  background-image: url("/images/episode-3.jpg");
+}
+
+.ep-4 {
+  background-image: url("/images/episode-4.jpg");
+}
