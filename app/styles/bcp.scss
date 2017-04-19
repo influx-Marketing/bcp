@@ -21,7 +21,8 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
 }
 
 h4 {
@@ -129,7 +130,7 @@ footer {
 .blue-ep,
 .episode,
 .grey-ep {
-  height: 20rem;
+  height: 25rem;
   text-align: left;
   padding: 0;
   margin-bottom: 2rem;
@@ -158,6 +159,14 @@ footer {
   height: 99%;
   overflow: auto;
   padding-right: 0px;
+}
+
+.text-container-3 h4{
+  background-color: $red-color;
+  width: 50%;
+  text-align: center;
+  color: $white-color;
+  display: flex;
 }
 
 .ep-1,
