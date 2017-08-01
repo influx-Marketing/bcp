@@ -1,0 +1,98 @@
+.audio-player-tablet {
+	margin: 0 auto;
+}
+
+.audio-section {
+	padding: 0 !important;
+	margin-bottom: auto;
+	margin-left: -60px;
+	width: 100%;
+}
+
+.audio-player-tablet,
+.audio-player-tablet div,
+.audio-player-tablet h1,
+.audio-player-tablet a,
+.audio-player-tablet img,
+.audio-player-tablet span,
+.audio-player-tablet button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+div.audio-player-tablet {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 15%;
+	background: #0E69F7;
+}
+
+div#mep_0, .mejs-inner {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* Buttons */
+.mejs-controls .mejs-button button {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+/* Play & Pause */
+.mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button {
+	width: 40px;
+	height: 50px;
+	top: 30%;
+	left: 18.5%;
+	background: transparent url(../images/play-pause.png) 0 0;
+}
+
+.mejs-controls .mejs-pause button {
+	background-position:0 -55px;
+}
+
+/* Progress Slider */
+.mejs-controls .mejs-time-rail span {
+	position: absolute;
+	width: 49.5%;
+	height: 8%;
+	left: 24.5%;
+	bottom: 44%;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	background: #6EA5FA;
+}
+
+/* Progress Bar Handle */
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+	position: absolute;
+	width: 12px;
+	height: 34px;
+	top: -14px;
+	background: url(../images/handle.png) no-repeat;
+}
+
+/* Duration */
+.mejs-time {
+	color: #0E69F7;
+}
+
+span.mejs-duration {
+	color: #fff;
+	letter-spacing: 0.15rem;
+	font-size: 0.8rem;
+}
+
+.mejs-duration-container {
+	position: absolute;
+	left: 77%;
+	top: 38%;
+}

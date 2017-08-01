@@ -1,13 +1,20 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" id="page">
 
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Business Continuity Podcast</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- build:js scripts/mediaelement-and-player.min.js -->
+  <script src="scripts/mediaelement-and-player.min.js"></script>
+  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/fav.png">
+  <!-- build:css styles/audio.css -->
+  <link rel="stylesheet" href="styles/audio.css">
+  <!-- endbuild -->
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
@@ -19,7 +26,9 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
+  <!-- build:css styles/bcp.css -->
   <link rel="stylesheet" href="styles/bcp.css">
+  <!-- endbuild -->
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -34,10 +43,11 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <ul class="nav-flex">
         <li>
-          <a href="#">About</a>
+          <a id="toggle" href="#">About</a>
         </li>
-        <li>
-          <img src="images/blue-vert.svg" alt="Logo" width="250px" /> </li>
+        <li class="logo">
+          <a href="../index.html"><img class="logo-swap" src="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/bcp-logo.png" alt="Logo" width="250px" /></a>
+        </li>
         <li>
           <a href="mailto:info@bcpcast.com">Contact</a>
         </li>
@@ -45,49 +55,245 @@
     </nav>
   </header>
 
+  <div class="overlay" id="overlay">
+    <a class="overlay-cross" id="overlay-cross" href="index.html"><img src="images/cross.png"></a>
+    <div class="about-content">
+      <h1>About <a target="_blank" href="http://www.databarracks.com/">Databarracks</a>’ Business Continuity Podcast</h1>
+      <p>Business continuity and disaster recovery are often maligned as dry, academic areas of study. Throughout a series of interviews with leading continuity practitioners, the Databarracks BCPcast takes a more human approach.</p>
+      <p>Continuity is both simpler than you might think, and incredibly easy to get wrong in the heat of the moment. We’ll explore how people and organisations have recovered from some of the most infamous disasters in recent history, along with a few weird
+        ones for good measure.</p>
+      <p>The Business Continuity Podcast is funded, promoted and made by <a target="_blank" href="http://www.databarracks.com/">Databarracks</a>.</p>
+      <a class="about-logo" target="_blank" href="http://www.databarracks.com/"><img src="images/db-logo.png"></a>
+    </div>
+  </div>
+  </div>
+
   <main>
     <div class="intro">
-      <p><span class="strikethrough">Ever wondered how suet pudding could bring one of the UK's busiest trading floors to a grinding halt?</span> Or why there used to be a caterpillar in the London Risk Register?</p>
-      <p><span class="blue-text strong"><a href="www.databarracks.com" class="black-under">Databarracks</a>' Business Continuity Podcast is a straightforward, jargon-free discussion with people who deal with disasters for a living.</span></p>
+      <p class="element"></p>
+      <p><span class="blue-text strong"><a target="_blank" href="http://www.databarracks.com/" class="black-under">Databarracks</a>' Business Continuity Podcast is a straightforward, jargon-free discussion with people who deal with disasters for a living.</span></p>
     </div>
 
+    <!-- Season One Write Ups -->
+    <section class="write-up">
+      <div class="row top-writeup">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="writeup-left">
+            <h1>Season 1: The Write Ups</h1>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="writeup-right">
+            <p>
+              Once the printer ink runs dry it has to be replaced with another inkjet cartridge. There are many reputed companies like Canon, Epson, Dell, and Lexmark that provide the necessary cartridges to replace the empty cartridges. Replacing inkjet cartridge
+              can add to a very big cost.</p>
+            <p>It could be worse if you have to replace the empty cartridges frequently every month. Nowadays many buyers are making use of compatible Inkjet Cartridges as they are less expensive and are easily available online.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row pdf-writeups">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="writeups-left">
+            <div class="writeup-ep">
+              <a class="pdf-download writeup1" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-1.pdf" download><h4>1: An Aptitude for Disaster</h4></a>
+            </div>
+            <div class="writeup-ep">
+              <a class="pdf-download writeup2" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-2.pdf" download><h4>2: Supermodels and Terrorists</h4></a>
+            </div>
+            <div class="writeup-ep">
+              <a class="pdf-download writeup3" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-3.pdf" download><h4>3: We’re All Human, We’re All Vulnerable</h4></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="writeups-right">
+              <div class="writeup-ep">
+                <a class="pdf-download writeup4" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-4.pdf" download><h4>4: plans are useless, planning is everything</h4></a>
+              </div>
+              <div class="writeup-ep">
+                <a class="pdf-download writeup5" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-5.pdf" download><h4>5: Total Meltdowns and the Emergency Planner’s Paradox</h4></a>
+              </div>
+              <div class="writeup-ep">
+                <a class="pdf-download writeup6" href="https://s3.eu-west-2.amazonaws.com/testbcpcast.com/images/episode-6.pdf" download><h4>6: Box-Tickers</h4></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Episode Six -->
     <section>
       <div class="col-sm-6 col-md-6 col-lg-6 blue-ep" id="text-container-1">
         <div id="text-container-2">
+          <h4>Episode 6</h4>
+          <h1>Box-tickers</h1>
+          <p>In the 6th and final episode of series one of the BCPcast, we take a closer look at one of the areas that, to the uninitiated, often represents the more off-putting and complex aspects of continuity: compliance. We examine how good BC and DR
+            practices are connected to (and represented by) regulatory compliance, and consider the merits of different approaches and attitudes towards certification.</p>
+        </div>
+        <a href="episodes/episode-6.html" class="mobile-listen mlb"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-6.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-6.mp3" download><h4>Download</h4></a></li>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 episode ep-6">
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-6.mp3" type="audio/mp3" controls="controls"></audio>
+        </div>
+      </div>
+    </section>
+    <!-- Episode Five -->
+    <section>
+      <div class="col-sm-6 col-md-6 col-lg-6 grey-ep">
+        <div class="grey-text-container">
           <h4>Episode 5</h4>
-          <h1>Total Meltdowns and the Emergency Planner's Paradox</h1>
-          <p>Episode 5 of the BCPcast investigates what happens when carefully laid, and well-rehearsed plans collide with reality. This one is about big disasters, their effects, and the positives, if any, that can come out of them.</p>
+          <h1>Total Meltdowns And The Emergency Planner's Paradox</h1>
+          <p>Episode 5 of the BCPcast investigates what happens when carefully laid, and well-rehearsed plans collide with reality. This one is about big disasters, their effects, and the positives, if any, that can come out of them.
+          </p>
+        </div>
+        <a href="episodes/episode-5.html" class="mobile-listen mlr"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-5.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-5.mp3" download><h4>Download</h4></a></li>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 episode ep-5">
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-5.mp3" type="audio/mp3" controls="controls"></audio>
+        </div>
+      </div>
+    </section>
+    <!-- Episode Four -->
+    <section>
+      <div class="col-sm-6 col-md-6 col-lg-6 blue-ep" id="text-container-1">
+        <div id="text-container-2">
+          <h4>Episode 4</h4>
+          <h1>Plans Are Useless, Planning Is Everything</h1>
+          <p>In the fourth episode of the BCPcast, we’re going to look at the point at which business continuity and disaster recovery stop existing as ideas and start to take shape as actions, as we examine the very practical process of planning for the
+            worst, and the testing that ensures those plans work.</p>
+        </div>
+        <a href="episodes/episode-4.html" class="mobile-listen mlb"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-4.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-4.mp3" download><h4>Download</h4></a></li>
         </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 episode ep-4">
-        <div class="text-container-3">
-          <h4>Listen on iTunes</h4>
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-4.mp3" type="audio/mp3" controls="controls"></audio>
         </div>
       </div>
     </section>
-
+    <!-- Episode Three -->
     <section>
       <div class="col-sm-6 col-md-6 col-lg-6 grey-ep">
+        <div class="grey-text-container">
+          <h4>Episode 3</h4>
+          <h1>We're All Human, We're All Vulnerable</h1>
+          <p>In the third episode of the BCPcast, we take a look at a comparatively new source of risk that has landed in the lap of many already-overworked continuity professionals: cyber.</p>
+        </div>
+        <a href="episodes/episode-3.html" class="mobile-listen mlr"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-3.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-3.mp3" download><h4>Download</h4></a></li>
+        </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 episode ep-3">
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-3.mp3" type="audio/mp3" controls="controls"></audio>
+        </div>
       </div>
     </section>
+    <!-- Episode Two -->
     <section>
       <div class="col-sm-6 col-md-6 col-lg-6 blue-ep">
+        <div id="text-container-2">
+          <h4>Episode 2</h4>
+          <h1>Terrorists And Supermodels</h1>
+          <p>In the second episode of the BCPcast we turn the tables, and examine why BC and DR have a reputation for being difficult and expensive among so many organisations. We examine the visceral emotional reaction that disruptive events can ellicit,
+            and consider the etymological implications of dealing in areas like "disaster".</p>
+        </div>
+        <a href="episodes/episode-2.html" class="mobile-listen mlb"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-2.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-2.mp3" download><h4>Download</h4></a></li>
+        </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 episode ep-2">
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-2.mp3" type="audio/mp3" controls="controls"></audio>
+        </div>
       </div>
     </section>
-    <section>
+    <!-- Episode One -->
+    <section class="sec-ep1">
       <div class="col-sm-6 col-md-6 col-lg-6 grey-ep">
+        <div class="grey-text-container">
+          <h4>Episode 1</h4>
+          <h1>An Aptitude For Disaster</h1>
+          <p>In the first episode of the Business Continuity Podcast, we meet the people who keep some of the largest organisations in the UK running throughout disruption, and ask the question: what makes someone good in a disaster? And why are certain
+            people attracted to situations where everything goes wrong?</p>
+        </div>
+        <a href="episodes/episode-1.html" class="mobile-listen mlr"><h4>listen now</h4></a>
+        <div class="text-container-4">
+          <a href="episodes/episode-1.html"><h4>Listen Now</h4></a>
+        </div>
+        <div class="download-btn">
+          <li><img src="images/download.png" alt="download"><a href="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-1.mp3" download><h4>Download</h4></a></li>
+        </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 episode ep-1">
+        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-bcpcast/id1113990524?mt=2">
+          <div class="text-container-3">
+            <h4>Listen on iTunes</h4>
+          </div>
+        </a>
+        <div class="audio-player">
+          <audio id="audio-player" src="https://s3.eu-west-2.amazonaws.com/bcpcastepisodes/episode-1.mp3" type="audio/mp3" controls="controls"></audio>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Footer go' be out here</p>
+    <p>Made by</p>
+    <a target="_blank" href="http://www.databarracks.com/"><img src="images/db-logo.png" /></a>
   </footer>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -106,6 +312,58 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/typed.js -->
+  <script src="scripts/typed.js"></script>
+  <!-- endbuild -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      Typed.new(".element", {
+        strings: ["Ever wondered how suet pudding could bring one of the UK's busiest trading floors to a grinding halt? Or why there used to be a caterpillar in the London Risk Register?"],
+        typeSpeed: 5,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.logo-swap')
+        .mouseover(function() {
+          $(this).attr("src", "images/bcp-logo.gif");
+        })
+    });
+  </script>
+
+  <!-- audio player -->
+  <script>
+    $('audio').mediaelementplayer({
+      duration: 120
+    });
+  </script>
+
+  <!-- audio player -->
+  <script>
+    $(document).ready(function() {
+      $('#audio-player').mediaelementplayer({
+        alwaysShowControls: true,
+        features: ['playpause', 'volume', 'progress'],
+        audioVolume: 'horizontal',
+        audioWidth: 400,
+        audioHeight: 120
+      });
+    });
+  </script>
+
+  <!-- about overlay -->
+  <script type="text/javascript">
+    $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
   </script>
 
   <!-- build:js scripts/vendor.js -->
